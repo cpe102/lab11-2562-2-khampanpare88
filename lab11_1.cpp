@@ -1,8 +1,8 @@
 #include<iostream>
-
+#include<cmath>
 using namespace std;
-
 //Write prototype of function fibonacci() here
+unsigned long long  int fibonacci(int);
 
 int main(){
 	cout << fibonacci(0) << "\n";
@@ -17,8 +17,15 @@ int main(){
 
 
 //Write definition of function fibonacci() here
-/*
-??? fibonacci(???){
-  
+
+unsigned long long int fibonacci(int x){
+	x==abs(x);
+	if(x==0){
+		return 0; }
+	if(x==1){
+		return 1; }
+	if(x>1){
+		return fibonacci(x-1) + fibonacci(x-2);
+	}
+	return 0;
 }
-*/
